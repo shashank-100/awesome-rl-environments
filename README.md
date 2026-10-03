@@ -13,7 +13,9 @@
 - [LLM Agents & Reasoning](#llm-agents--reasoning)
 - [Web & Computer Use](#web--computer-use)
 - [Software Engineering](#software-engineering)
+- [FineEnvs (Hugging Face)](#fineenvs-hugging-face)
 - [Domain-Specific](#domain-specific)
+- [Training Libraries](#training-libraries)
 - [Related Lists](#related-lists)
 - [Guides & Articles](#guides--articles)
 - [Contributing](#contributing)
@@ -23,6 +25,11 @@
 - [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) - Maintained successor to OpenAI Gym; the standard single-agent RL API.
 - [PettingZoo](https://github.com/Farama-Foundation/PettingZoo) - Gymnasium-style API for multi-agent environments.
 - [dm_env](https://github.com/google-deepmind/dm_env) - DeepMind's minimal environment interface.
+- [OpenEnv](https://github.com/meta-pytorch/OpenEnv) - Framework for isolated, deployable environments for agentic RL training.
+- [NeMo Gym](https://github.com/NVIDIA-NeMo/Gym) - NVIDIA's library for building RL environments for LLM training.
+- [Harbor](https://github.com/laude-institute/harbor) - Framework for running agent evals and RL environments in containers.
+- [HUD](https://github.com/hud-evals/hud-python) - Toolkit for building, benchmarking, and training agents on RL environments.
+- [Prime Intellect Environments Hub](https://app.primeintellect.ai/dashboard/environments) - Community hub of open RL environments for LLMs.
 
 ## Classic Control & Games
 
@@ -82,10 +89,34 @@
 - [SWE-bench](https://github.com/SWE-bench/SWE-bench) - Real GitHub issues as software engineering tasks.
 - [SWE-Gym](https://github.com/SWE-Gym/SWE-Gym) - Training environment for software engineering agents.
 
+## FineEnvs (Hugging Face)
+
+[FineEnvs](https://huggingface.co/FineEnvs) publishes open environments, datasets, and GRPO training runs on the Hugging Face Hub.
+
+- [Nayana Multilingual OCR](https://huggingface.co/spaces/FineEnvs/nayana-ocr-env) - OpenEnv document OCR, layout detection, and VQA over 22 languages.
+- [FLEURS Multilingual ASR](https://huggingface.co/spaces/FineEnvs/fleurs-asr-env) - OpenEnv speech recognition and language ID over 102 languages.
+- [LaTeX OCR](https://huggingface.co/spaces/FineEnvs/latex-ocr-env) - Transcribe rendered formulas into LaTeX.
+- [GeoGuesser](https://huggingface.co/spaces/FineEnvs/geoguesser-env) - Guess locations from images.
+- [Watercolour](https://huggingface.co/spaces/FineEnvs/watercolour-env) - Paint with code, scored by reward models and judges.
+- [DesignGym](https://huggingface.co/spaces/FineEnvs/DesignGym) - Recreate real graphic designs via MCP, HTML, or a real editor.
+- [RetroEnv](https://huggingface.co/spaces/FineEnvs/retroenv) - Plan retrosynthesis routes with verifier-backed rewards.
+- [Simulation RL Environments](https://huggingface.co/spaces/FineEnvs/simulation-rl-environments) - Real-world simulations such as port dock planning and airline ops.
+- [Wordle](https://huggingface.co/spaces/FineEnvs/wordle-openenv) - The same environment built in OpenEnv, [ORS](https://huggingface.co/spaces/FineEnvs/wordle-ors), and [NeMo Gym](https://huggingface.co/spaces/FineEnvs/wordle-nemo-gym).
+- [SmolDataEnvs](https://huggingface.co/datasets/FineEnvs/SmolDataEnvs) - Data-analysis tasks for multi-harness agent RL.
+- [Data Agent](https://huggingface.co/datasets/FineEnvs/data-agent) - Data-agent tasks with Harbor train/test splits.
+- [Repo2RLEnv](https://huggingface.co/collections/FineEnvs/repo2rlenv-verifiable-rl-environments-6aa82300d7494c050f50508d) - Verifiable environments mined from GitHub PRs, commits, and CVE patches.
+- [MiMo-V2.6-RL in Harbor](https://huggingface.co/collections/FineEnvs/mimo-v26-rl-in-harbor-6ab836dba014bd7580f8a3fe) - Code, cyber, terminal, and general tasks in Harbor format.
+- [RL Explorer](https://huggingface.co/spaces/FineEnvs/RL-Explorer) - Browse environments and tasks across frameworks and run agent rollouts.
+
 ## Domain-Specific
 
 - [FinRL](https://github.com/AI4Finance-Foundation/FinRL) - Financial trading environments for deep RL.
 - [RecSim](https://github.com/google-research/recsim) - Simulation platform for recommender systems.
+
+## Training Libraries
+
+- [RLlib](https://docs.ray.io/en/latest/rllib/index.html) - Scalable RL library built on Ray.
+- [CleanRL](https://github.com/vwxyzjn/cleanrl) - Single-file implementations of deep RL algorithms.
 
 ## Related Lists
 
@@ -96,6 +127,9 @@
 ## Guides & Articles
 
 - [The Ultimate Guide to RL Environments](https://huggingface.co/spaces/AdithyaSK/rl-environments-guide) - Hugging Face guide to building and scaling RL environments in the LLM era (2026).
+- [RL Environments 101 Slides](https://huggingface.co/spaces/AdithyaSK/rl-environments-101-slides) - Companion slides to the guide above.
+- [The Ultimate Guide to Multi-Harness RL](https://huggingface.co/spaces/FineEnvs/multi-harness-rl) - Training one environment across several agent harnesses.
+- [How to Turn a Game into an RL Environment](https://huggingface.co/spaces/FineEnvs/geoguesser-article) - Building the GeoGuesser environment end to end.
 - [15 Awesome Reinforcement Learning Environments You Must Know](https://medium.com/@mlblogging.k/15-awesome-reinforcement-learning-environments-you-must-know-a38fb75867f2) - Overview from Neural MMO to RLCard.
 - [Top 5 Reinforcement Learning Environments](https://www.hud.ai/resources/top-5-reinforcement-learning-environments) - HUD's 2026 roundup.
 - [Best Sandboxes for Self-Play RL Environments in 2026](https://modal.com/resources/best-sandboxes-self-play-rl-environments) - Modal's comparison of self-play platforms.
